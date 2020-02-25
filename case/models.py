@@ -16,6 +16,7 @@ class Case(models.Model):
     description = models.TextField()
 
     registered_by=models.ForeignKey(MyUser,related_name='appealer', on_delete=models.CASCADE)
+    defendent=models.ForeignKey(MyUser,related_name='defendent', on_delete=models.CASCADE)
 
     first_lawyer = models.ForeignKey(MyUser,related_name='first_lawyer', on_delete=models.CASCADE)
     second_lawyer = models.ForeignKey(MyUser,related_name='second_lawyer', on_delete=models.CASCADE)

@@ -4,6 +4,24 @@ body{
 	padding:0;
 }
 
+#lawyer_home{
+	display: grid;
+	grid-template-columns: 2fr 10fr;
+	
+}
+
+.sidebar{
+	border-right:1px solid lightgrey;
+	min-height:100vh;
+	box-shadow: 1px 1px 4px lightgray;
+}
+
+.main-content{
+
+	margin: 16px 32px;
+
+}
+
 h3{
 	font-weight:bold;
 
@@ -33,4 +51,9 @@ h3{
 
 	font-weight:bold;
 	color:blue;
+}
+
+.special{
+	font-weight: bold;
+	
 }
