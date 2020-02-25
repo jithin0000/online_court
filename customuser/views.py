@@ -38,6 +38,13 @@ def login_user(request):
 
             if user is not None:
                 login(request, user)
+                if user.user_type=="Plaintiff":
+                    return redirect('user_home')
+                elif user.user_type=="Lawyer":
+                    return redirect('lawyer_home')
+                elif user.user_type=="Witness":
+                    return redirect('witness_home')
+
                 return redirect('home')
             else:
                 print('invalid username or password ' )

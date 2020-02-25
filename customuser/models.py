@@ -7,7 +7,7 @@ user_choices = (
         ('Admin', 'Admin'),
         ('Lawyer', 'Lawyer'),
         ('Witness', 'Witness'),
-        ('Member', 'Member'),
+        ('Plaintiff', 'Plaintiff'),
         )
 
 class CustomUserManager(BaseUserManager):

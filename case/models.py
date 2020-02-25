@@ -4,10 +4,10 @@ from django.db import models
 from customuser.models import MyUser
 
 case_choices = (
-        ('p', 'Pending'),
-        ('a', 'Active'),
-        ('po', 'PostPhoned'),
-        ('c', 'Closed')
+        ('pending', 'Pending'),
+        ('active', 'Active'),
+        ('postphoned', 'PostPhoned'),
+        ('closed', 'Closed')
         )
 
 
