@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'customuser',
-    'case'
+    'case', 'plaintiff','lawyer', 'witness',
 ]
 
 MIDDLEWARE = [
