@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
+
 
 from django.contrib.auth import login, authenticate, logout
 
@@ -47,7 +49,7 @@ def login_user(request):
 
                 return redirect('home')
             else:
-                print('invalid username or password ' )
+                messages.add_message(request, messages.INFO, 'Invalid username or password')
 
 
 

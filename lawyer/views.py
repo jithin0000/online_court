@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-
+from django.db.models import Q
 # Create your views here.
 
 from customuser.models import MyUser
@@ -7,7 +7,9 @@ from case.models import Case
 
 def lawyer_home(request):
 
-    case_list = Case.objects.filter(first_lawyer = request.user)
+    case_list = Case.objects.filter(
+        Q(first_lawyer = request.user) | Q(second_lawyer=request.user)
+    )
     
     return render(request, 'lawyer/lawyer_home.html', {
         "case_list" : case_list
