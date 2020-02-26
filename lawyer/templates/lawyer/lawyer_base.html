@@ -4,9 +4,7 @@
 <section id="lawyer_home">
 
     <div class="sidebar">
-        <h3 class="px-2">{{request.user}}</h3>
-
-        <hr>
+        <h3 class="my-3">{{request.user}}</h3>
 
         <ul class="list-group mt-3">
             <li class="list-group-item"><a href="{% url 'lawyer_home' %}">Home</a></li>
@@ -14,7 +12,7 @@
             <li class="list-group-item"><a href="{% url 'lawyer_home' %}">Witness</a></li>
             <li class="list-group-item"><a href="{% url 'lawyer_home' %}">Evidence</a></li>
             <li class="list-group-item"><a href="{% url 'lawyer_home' %}">Profile</a></li>
-            <li class="list-group-item"><a href="{% url 'lawyer_home' %}">Log out</a></li>
+            <li class="list-group-item"><a href="{% url 'logout' %}">Log out</a></li>
         </ul>
 
     </div>
